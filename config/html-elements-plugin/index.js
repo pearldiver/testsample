@@ -1,8 +1,3 @@
-﻿//-----------------------------------------------------------------------------
-//  Copyright (c) 2017 Schlumberger  
-//  Schlumberger Private  
-//-----------------------------------------------------------------------------
-
 
 function HtmlElementsPlugin(locations) {
   this.locations = locations;
