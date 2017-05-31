@@ -40,17 +40,7 @@
                 { type: 'cobertura', dir: reportOutput, subdir: 'cobertura', file: 'cobertura-coverage.xml' },
                 { type: 'lcovonly', dir: reportOutput, subdir: 'coverageReporter', file: 'coverage.lcov' }
             ]
-        },
-        sonarQubeUnitReporter: {
-            sonarQubeVersion: 'LATEST',
-            outputDir: reportOutput + '/sonarQubeUnitReporter/',
-            outputFile: 'sonar_report.xml',
-            useBrowserName: false
-        },
-        tfsReporter: {
-            outputDir: reportOutput + '/tfsReporter/',
-            outputFile: 'testresult.trx'
-        },
+        },        
         remapCoverageReporter: {
             'text': null,
             'text-summary': null,
@@ -67,7 +57,7 @@
          * possible values: 'dots', 'progress'
          * available reporters: https://npmjs.org/browse/keyword/karma-reporter
          */
-        reporters: ['mocha', 'coverage', 'remap-coverage', 'tfs', 'sonarqubeUnit'],
+        reporters: ['mocha', 'coverage', 'remap-coverage'],
 
         // web server port
         port: 9876,
